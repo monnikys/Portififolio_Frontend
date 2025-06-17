@@ -1,32 +1,58 @@
 ﻿# Portfólio de Monniky Ribeiro
 
-Este é o portfólio de Monniky Ribeiro, desenvolvedora Front-End especializada em React, HTML, CSS, além de possuir conhecimentos em Python, JS, Git, PostgreSQL, Power BI e Figma.
+Este é o portfólio de **Monniky Ribeiro**, desenvolvedora Front-End especializada em **React, HTML e CSS**, com conhecimentos adicionais em **Python, JavaScript, Git, PostgreSQL, Power BI** e **Figma**.
 
-## Descrição do Projeto
+---
 
-O projeto é um portfólio pessoal que exibe minhas habilidades e experiência como desenvolvedora. Nele, você encontrará uma breve apresentação sobre mim e links para as minhas redes sociais e repositórios de código.
+## 💡 Sobre o Projeto
 
-## Visualização do Portfólio
+Este projeto é um portfólio pessoal que apresenta minhas habilidades, experiências e projetos desenvolvidos. Agora com estrutura de navegação entre páginas, o site inclui:
 
-![Captura de Tela do Portfólio](print.jpg)
+- **Home** (`index.html`), com layout atualizado, imagens e ícones de navegação;
+- **About** (`about.html`), uma nova página com informações sobre mim;
+- **Projects** (`projects.html`), página em desenvolvimento que apresentará meus principais trabalhos.
 
-### Tecnologias Utilizadas
+---
 
-- **HTML**: Estrutura básica da página.
-- **CSS**: Estilo visual da página, utilizando fontes do Google Fonts e uma paleta de cores personalizada.
-- **Responsividade**: A página é projetada para ser visualizada corretamente em diferentes dispositivos, com um design flexível.
+## 🖼️ Visualização de Tela do Portfólio - Home
+![Captura de Tela do Portfólio - Home](assets/images/home.jpg)
 
-### Estrutura do Projeto
+## 🖼️ Visualização de Tela do Portfólio - About
+![Captura de Tela do Portfólio - About](assets/images/about.jpg)
 
-- `index.html`: Arquivo principal da página, contendo a estrutura de apresentação do portfólio.
-- `style.css`: Arquivo de estilos, contendo toda a formatação da página.
-- `imagem.png`: Imagem que é exibida na seção de apresentação (foto de Monniky).
+## 🖼️ Visualização de Tela do Portfólio - Projects
+![Captura de Tela do Portfólio - About](assets/images/projects.jpg)
 
-### Como Rodar
+---
 
-1. Clone este repositório em seu computador:
+## 🚀 Tecnologias Utilizadas
+
+- **HTML**: Estrutura semântica das páginas.
+- **CSS**: Estilização com Google Fonts, paleta de cores personalizada e layout responsivo.
+- **Responsividade**: Design adaptável para diferentes dispositivos.
+- **Organização de arquivos**:
+  - `assets/`: Contém imagens, ícones e outros recursos visuais.
+  - `styles/`: Arquivos CSS organizados por seções e páginas.
+
+---
+
+## 📁 Estrutura do Projeto
+
+- `index.html`: Página principal (Home), com ícones e nova estrutura visual.
+- `about.html`: Página com informações sobre mim.
+- `projects.html`: Página em desenvolvimento para exibir meus projetos.
+- `assets/`: Pasta com imagens, ícones e capturas de tela.
+- `styles/`: Pasta com arquivos de estilo CSS organizados.
+- `imagem.png`: Foto utilizada na apresentação.
+
+---
+
+## ▶️ Como Rodar o Projeto
+
+1. Clone o repositório:
    ```bash
    git clone https://github.com/monnikys/Portifolio-FrontEnd.git
+
 
 2. Abra o arquivo `index.html` em seu navegador.
 

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --primary-color: #DF80E8; /* Cor primária do site */
+    --secondary-color: #F6F6F6; /* Cor secundária do site */
+    --background-color: #000000; /* Cor de fundo do site */
+    --hover-color: #272727; /* Cor de fundo do link quando o mouse passa por cima */
+
+    --font-family: 'Montserrat', sans-serif; /* Fonte padrão do site */
+    --font-family-title: 'Krona One', sans-serif; /* Fonte para títulos */
+
+}
+
+* { /*Zerar a variável*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box; /* Com ele conseguimos criar, por exemplo, uma borda e um padding, ou o que quisermos, e o conteúdo será encolhido para sempre ser mantido dentro do elemento "pai".
+    Pode não parecer legal encolher esse conteúdo, mas é isso que faz com que tenhamos controle de como todos os elementos estão funcionando, já que é muito frustrante estar fazendo uma alteração no elemento "filho" e ele sair do "pai.*/
+    background-color: var(--background-color);
+    color: var(--secondary-color); /*Cor do texto*/
+}
+
+.header {
+    padding: 2% 0 0 15% ;
+}
+
+.header__nav {
+    display: flex;
+    gap: 80px;
+}
+
+.nav__link {
+    font-family: var(--font-family);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.presentation {
+    padding: 5% 15%; /* Margem*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentation__content {
+    font-family: var(--font-family-title);
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentation__content__title {
+    font-size: 36px;
+}
+
+.title-strong {
+    color: var(--primary-color);
+}
+
+.presentation__content__text {
+    font-size: 24px;
+    font-family: var(--font-family);
+}
+
+.presentation__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentation_links_caption {
+    font-family: var(--font-family-title);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 16px; /* Espaçamento entre o título e os links */
+}
+
+.presentation__links__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 378px;
+    padding: 21.5px 0;
+    text-align: center;
+    border: 2px solid var(--primary-color);
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+}
+
+.presentation__links__link:hover {
+    background-color: var(--hover-color); /* Cor de fundo do link quando o mouse passa por cima */
+}
+
+.footer__text {
+    padding: 24px;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 24px;
+    font-weight: 400;
+}

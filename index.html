@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge"> <!--- Este é uma meta especifica pra o Edge-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escala inicial da página-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css"> <!-- Linkando o CSS-->
     <title>Portifólio de Monniky </title>
 </head>
 <body>
-    <header></header> <!--Cabeçalho-->
+    <header class="header"> <!--Cabeçalho-->
+        <nav class="header__nav"> <!--Navegação do cabeçalho-->
+            <a class="nav__link" href="index.html">Home</a>
+            <a class="nav__link" href="about.html">Sobre</a> 
+            <a class="nav__link" href="projects.html">Projetos</a>
+        </nav>
+
+    </header> <!--Cabeçalho-->
     <main class="presentation">
         <section class="presentation__content"> <!--Seção-->
             <h1 class="presentation__content__title">Eleve seu negócio digital a outro nível
@@ -18,13 +25,27 @@
                 Tenho experiência em ferramentas como Git, PostgreSQL, Power BI e Figma, além de conhecimentos em Python e JS.
                 Ajudo negócios e designers a darem vida a projetos inovadores. Vamos conversar?</p>
             <div class="presentation__links">
-                <a class="presentation__links__link" href="https://www.instagram.com/its.monniky/">Instagram</a>
-                <a class="presentation__links__link" href="https://github.com/monnikys">Github</a>
+                <h2 class="presentation_links_caption"> Acesse minhas redes:</h2>
+                <a class="presentation__links__link" href="https://www.instagram.com/its.monniky/">
+                    <img src="./assets/instagram.png" alt="Instagram" class="presentation__links__icon">
+                    Instagram
+                </a>
+                <a class="presentation__links__link" href="https://github.com/monnikys">
+                    <img src="./assets/github.png" alt="Github" class="presentation__links__icon">
+                    Github
+                </a>
+                <a class="presentation__links__link" href="https://www.linkedin.com/in/monniky-ribeiro-41b909206/">
+                    <img src="./assets/linkedin.png" alt="LinkedIn" class="presentation__links__icon">
+                    LinkedIn
+                </a>
             </div>
         </section>
-            <img src="imagem.png" alt="Foto de Monniky">
+            <img src="./assets/imagem.png" alt="Foto de Monniky">
         </main> <!-- Conteúdo principal-->
-    <footer></footer> <!-- Rodapé-->
+
+    <footer>
+        <p class="footer__text">© 2023 Monniky Ribeiro</p>
+    </footer> <!-- Rodapé-->
 </body>
 </html>
 
