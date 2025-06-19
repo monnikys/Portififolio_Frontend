@@ -34,8 +34,8 @@ body {
 
 .nav__link {
     font-family: var(--font-family);
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 1.3rem; /* Tamanho do texto */ /*REM é uma unidade de medida relativa ao tamanho da fonte do elemento raiz (html). Cada REM equivale a 16px. */
+    font-weight: 400;
     color: var(--primary-color);
     text-decoration: none;
 }
@@ -45,18 +45,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px; /* Espaçamento entre o conteúdo e a imagem */
 }
 
 .presentation__content {
     font-family: var(--font-family-title);
-    width: 615px;
+    width: 50%; /* Largura do conteúdo */
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .presentation__content__title {
-    font-size: 36px;
+    font-size: 2rem; /* Tamanho do título */
+    font-family: var(--font-family-title);
 }
 
 .title-strong {
@@ -64,7 +66,7 @@ body {
 }
 
 .presentation__content__text {
-    font-size: 24px;
+    font-size: 1.4rem;
     font-family: var(--font-family);
 }
 
@@ -79,31 +81,35 @@ body {
 .presentation_links_caption {
     font-family: var(--font-family-title);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.3rem;
     color: var(--primary-color);
     text-align: center;
     margin-bottom: 16px; /* Espaçamento entre o título e os links */
 }
 
-.presentation__links__link {
+.presentation__links__nav {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
-    width: 378px;
+    width: 50%;
     padding: 21.5px 0;
     text-align: center;
     border: 2px solid var(--primary-color);
     border-radius: 16px;
-    font-size: 24px;
+    font-size: 1.2rem;
     font-weight: 600;
     text-decoration: none;
     color: var(--secondary-color);
     font-family: var(--font-family);
 }
 
-.presentation__links__link:hover {
+.presentation__links__nav:hover {
     background-color: var(--hover-color); /* Cor de fundo do link quando o mouse passa por cima */
+}
+
+.presentation_image {
+    width: 50%; /* Largura da imagem */
 }
 
 .footer__text {
@@ -112,6 +118,20 @@ body {
     background-color: var(--primary-color);
     text-align: center;
     font-family: var(--font-family);
-    font-size: 24px;
+    font-size: 1rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .header{
+        padding: 10%;
+    }
+    .header__nav {
+        justify-content: center; /* Centraliza os links de navegação */
+    }
+    .presentation {
+        flex-direction: column-reverse; /* Muda a direção do flex para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+    
 }
